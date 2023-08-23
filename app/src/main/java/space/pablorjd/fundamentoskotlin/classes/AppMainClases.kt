@@ -17,4 +17,9 @@ fun main() {
     newTopic("SobreEscritura")
     smartphone.showNumber()
     println("Privado? ${smartphone.isPrivate}")
+
+    newTopic( "DATACLASS" )
+    val myUser = User(0,"Pablo","Jiménez", 0)
+    println( myUser.component3() )
+    println(myUser)
 }
