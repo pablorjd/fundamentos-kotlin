@@ -16,6 +16,8 @@ fun main () {
 
     showProducs("soda", "15","5 de Abril")
     showProducs("pasteles", validity = "hasta el 15 de marzo")
+
+    tarea(5)
 }
 
 // la funcion al hacerla privada solo puede ser invocada en esta clase o archivo .kt
@@ -37,4 +39,8 @@ infix fun Int.enableAbs( enable: Boolean ) = if (enable) abs(this) else this
 
 fun showProducs ( name: String, promo:String = "Sin promoción", validity:String = "Hasta agotar Stock" ) {
     println("$name = $promo $validity")
+}
+
+fun tarea(parametro: Int): Unit {
+    println("Tengo $parametro de hambre")
 }

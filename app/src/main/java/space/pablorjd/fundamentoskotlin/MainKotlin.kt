@@ -1,5 +1,6 @@
 package space.pablorjd.fundamentoskotlin
 
+const val separetor = "================" // constante global cuando se sabe el valor de la misma
 fun main() {
     // println("Hola Kotlin")
     newTopic( "Hola Kotlin" )
