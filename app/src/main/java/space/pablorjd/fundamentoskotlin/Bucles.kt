@@ -41,9 +41,11 @@ fun showPersons( vararg persons: String) {
     index = (0..persons.size-1).random()
 
     when(persons[index]) {
-        "Pablo" -> println("Es Pablo")
+        ///"Pablo" -> println("Es Pablo")
         "Litzi" -> println("Es Litzi")
         "Florencia" -> println("Es Florencia")
         "Maximiliano" -> println("Es Maximiliano")
+        else -> println("No se encontro ningun valor")
+
     }
 }
