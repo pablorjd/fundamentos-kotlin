@@ -3,7 +3,7 @@ package space.pablorjd.fundamentoskotlin
 fun main() {
     newTopic("Bucles")
     showPersons("Pablo", "Litzi", "Florencia")
-    showPersons("Pablo", "Litzi")
+    showPersons("Pablo", "Litzi", "Florencia", "Maximiliano")
 }
 
 fun showPersons (p1: String, p2:String, p3: String) {
@@ -29,7 +29,21 @@ fun showPersons( vararg persons: String) {
     newTopic("while")
     var index = 0
     while (index < persons.size ) {
+        if(persons[index] == "Litzi") {
+            println("Es Litzi <3")
+        }
         println(persons[index])
         index++
+    }
+
+    newTopic("When")
+    // asi se define un rango en kotlin
+    index = (0..persons.size-1).random()
+
+    when(persons[index]) {
+        "Pablo" -> println("Es Pablo")
+        "Litzi" -> println("Es Litzi")
+        "Florencia" -> println("Es Florencia")
+        "Maximiliano" -> println("Es Maximiliano")
     }
 }
