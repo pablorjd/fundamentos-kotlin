@@ -22,7 +22,6 @@ fun main() {
 
 fun newTopic( topic: String ) {
     println("""
-         "Este es un nuevo topic"
         $topic 
         """.trimIndent())
 }

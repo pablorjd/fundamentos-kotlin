@@ -27,4 +27,21 @@ fun main() {
     println( bro )
     println( myUser.component3() )
     println(myUser)
+
+
+    newTopic("Funciones de Alcance")
+    // las funciones de alcance engloban una clase y no es necesario llamar a la clase al momento de llamar una props o metodo dentro del with
+    with(smartphone) {
+        println( "Privado? ${isPrivate}" )
+        call()
+    }
+
+    // con el apply podemos mutar las propiedades de una objeto
+    bro.apply {
+        group = Group.WORK.ordinal
+        name = "Carlos"
+        lastName = "Telles"
+    }
+
+    println(bro)
 }
